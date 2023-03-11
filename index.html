@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name ="viewport" content="width=device-width,initial-scale=0.1">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@1,8..144,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>ABC Services </title>
+  </head>
+
+  <body>
+    <section class="hero">
+        <video autoplay loop muted plays-inline class="backvideo">
+             <source src="video.mp4" type="video/mp4">
+        </video>
+
+        <nav class="nav">
+        <img src="logo.png" class="logo">
+          <ul>
+            <li><a  href="#">Home</a></li>
+            <li><a  href="#services">Services</a></li>
+            <li><a  href="#about">About</a></li>
+            <li><a  href="#team">Team</a></li>
+            <li><a href="tel:+6309669765234" class="call-button">Contact</a>
+
+          </ul>
+        </nav>
+
+        <div class= "content">
+          <h1> Fixing devices, restoring connections </h1>
+          <div>
+            <a href="#contact"  id="glow-on-hover" type="btn">Send Email</a>
+          </div>
+          
+  
+    </section>
+
+    <section  class="hero" id ="services">
+      <div id="head"><h1>Services</h1></div>
+      <div class="container">
+         <div class="box" style="--clr:#D3C4D1;">
+            <div class="content">
+              <div class="icon"> <ion-icon name="hammer"></ion-icon></div>
+            <div class="text">
+              <h3>Repairing</h3>
+              <p> Repairing services provided for electronic devices such as smartphones, laptops, and gaming consoles.</p>
+              <a href="#services" onclick="showModal()">Read More</a>
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                  <h1>Repairing Service</h1>
+                   <p>Repairing services refer to the services provided to repair, maintain or fix an item or property that is damaged, malfunctioning or not working correctly. These services can be provided by a variety of professionals, including technicians, mechanics, electricians, plumbers, and other tradespeople.</p>
+              </div>
+            </div>
+            </div>
+            </div>
+         </div>
+
+         <div class="box" style="--clr:#FF729F;">
+          <div class="content">
+            <div class="icon"> <ion-icon name="code-slash"></ion-icon></div>
+              <div class="text">
+                <h3>Developing</h3>
+                <p>Development services can include software development, mobile app development, web development, database development, cloud computing services, quality assurance and testing.</p>
+                <a href="#services" onclick="showModal2()">Read More</a>
+              <div id="myModal2" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+                <h1>Developing</h1>
+                 <p>Software development services involve designing, coding, and testing software applications or systems that meet specific business requirements. Mobile app development services focus on creating mobile applications for smartphones and tablets, while web development services involve building and maintaining websites.</p>
+            </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          <div class="box" style="--clr:#56CBF9;">
+            <div class="content">
+              <div class="icon"> <ion-icon name="build"></ion-icon></div>
+                <div class="text">
+                  <h3>Building</h3>
+                  <p>Building service can include sourcing and selecting appropriate components for the build, assembling and testing the system, and providing support and maintenance.</p>
+                  <a href="#services" onclick="showModal3()">Read More</a>
+                <div id="myModal3" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                  <h1>Building</h1>
+                   <p>Hardware building service is a type of service that involves building, assembling, and testing computer hardware systems such as desktops, laptops, servers, or specialized systems like gaming rigs or workstation builds. The service can include sourcing and selecting appropriate components for the build, assembling and testing the system, and providing support and maintenance.</p>
+              </div>
+            </div>
+            </div>
+            </div>
+            </div>
+    </section>
+
+
+
+    <script>
+      function showModal() {
+        var modal = document.getElementById('myModal');
+        var span = document.getElementsByClassName('close')[0];
+        
+        modal.style.display = 'block'; // displays the modal
+        
+        span.onclick = function() {
+          modal.style.display = 'none'; // hides the modal when the close button is clicked
+        }
+        
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = 'none'; // hides the modal when the user clicks outside of it
+          }
+        }
+        
+        return false; // prevents the link from navigating to the href URL
+
+        
+      }
+
+      function showModal2() {
+        var modal = document.getElementById('myModal2');
+        var span = document.getElementsByClassName('close')[1];
+        
+        modal.style.display = 'block'; // displays the modal
+        
+        span.onclick = function() {
+          modal.style.display = 'none'; // hides the modal when the close button is clicked
+        }
+        
+        window.onclick = function(event) {
+          if (event.target == modal2) {
+            modal.style.display = 'none'; // hides the modal when the user clicks outside of it
+          }
+        }
+        
+        return false; // prevents the link from navigating to the href URL
+
+        
+      }
+
+      function showModal3() {
+        var modal = document.getElementById('myModal3');
+        var span = document.getElementsByClassName('close')[2];
+        
+        modal.style.display = 'block'; // displays the modal
+        
+        span.onclick = function() {
+          modal.style.display = 'none'; // hides the modal when the close button is clicked
+        }
+        
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = 'none'; // hides the modal when the user clicks outside of it
+          }
+        }
+        
+        return false; // prevents the link from navigating to the href URL
+
+        
+      }
+
+
+      
+      </script>
+
+<section class="hero" id = "about">
+  <div  id="text-box">
+  <h1> About </h1>
+  <p> Welcome to ABC services website! We are a team of experienced technicians dedicated to providing high-quality repair services for a variety of products, including electronics, appliances, automobiles, and more.
+
+    At our repair shop, we understand that your possessions are important to you and that when they break down, you want them fixed quickly and efficiently. That's why we offer fast turnaround times and prioritize quality workmanship in all that we do.
+    
+    With years of experience in the industry, we have the skills and expertise necessary to diagnose and repair a wide range of issues. Whether you need a cracked phone screen replaced, a faulty appliance fixed, or your car serviced, we are here to help. </p>
+  </div>
+  <div class="background">
+  <img src="awaw.png">
+  </div>
+</section>
+
+<section class="hero" id = "team">
+  <div id="head2"><h1>Team</h1></div>
+  <section class="articles">
+    <article>
+      <div class="article-wrapper">
+        <figure>
+          <img src="wen.jpg" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>Wenielyn Araquin</h2>
+          <p>
+            Pacute lang
+          </p>
+
+          <div class="image-container">
+          <a href="https://www.facebook.com/wenielyn.araquin" id="fb"></a>
+          <a href="https://www.instagram.com/wnlynrbyrqn" id="ig"></a>
+          <a href="wraraquin9.2@gmail.com" id="gm"></a>
+            
+            
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <article>
+      <div class="article-wrapper">
+        <figure>
+          <img src="ivan.jpg" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>Ivan Amer Benitez</h2>
+          <p>
+            Tahimik lang sa school
+          </p>
+           <div class="image-container">
+          <a href="https://www.facebook.com/navietuc24" id="fb"></a>
+          <a href="https://www.instagram.com/navietuc/" id="ig"></a>
+          <a href="https://github.com/ivanbenitez24" id="gh"></a>
+            
+
+            
+            
+          </a>
+        </div>
+      </div>
+    </article>
+  
+    <article>
+      <div class="article-wrapper">
+        <figure>
+          <img src="jeff.jpg" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>Jefferson Cater</h2>
+          <p>
+            Malakas mag valo<br>
+            Chix magnet 
+          </p>
+          <div class="image-container">
+            <a href="https://www.facebook.com/jheterzon133" id="fb"></a>
+            <a href="https://www.facebook.com/jeffchanlakichan" id="ig"></a>
+            <a href="https://www.twitter.com/JeffChanCater" id="gh"></a>
+
+
+            
+            
+          </a>
+        </div>
+      </div>
+    </article>
+  </section>
+  
+  <footer>
+    
+  </footer>
+</section>
+
+<section id="contact">
+  
+  <h1 class="section-header">Contact</h1>
+  
+  <div class="contact-wrapper">
+  
+  
+    
+  <form method="post" id="contact-form" class="form-horizontal" role="form">
+    <div class="form-group">
+      <div class="col-sm-12">
+        <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <div class="col-sm-12">
+        <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+      </div>
+    </div>
+  
+    <textarea class="form-control" id="message" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+  
+    <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+      <div class="alt-send-button">
+      <span class="send-text">SEND</span>
+      </div>
+    </button>
+  </form>
+  
+      <div class="direct-contact-container">
+
+        <ul class="contact-list">
+          <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">52 Kaliraya St. Tatalon Quezon City, 1113  </span></i></li>
+          
+          <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">+639669765234</a></span></i></li>
+          
+          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#vb" title="Send me an email">Bivanamer@gmail.com</a></span></i></li>
+          
+        </ul>
+
+        
+
+        <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+
+      </div>
+    
+  </div>
+</section>  
+  
+
+
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      console.log(entry);
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      } else {
+        entry.target.classList.remove('show');
+      }
+    });
+  });
+
+  const hiddenElements = document.querySelectorAll('.hero');
+  hiddenElements.forEach((el) => observer.observe(el));
+
+
+  
+</script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+
+  
+</body>
+</html>    
+
+
+
