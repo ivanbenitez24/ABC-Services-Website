@@ -307,28 +307,6 @@
     </div>
 </section>  
   
-
-
-
-<script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      console.log(entry);
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-      } else {
-        entry.target.classList.remove('show');
-      }
-    });
-  });
-
-  const hiddenElements = document.querySelectorAll('.hero');
-  hiddenElements.forEach((el) => observer.observe(el));
-
-
-  
-</script>
-
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script>
@@ -352,6 +330,24 @@ document
   .addEventListener("submit", handleSubmit);
 </script>
 
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      console.log(entry);
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      } else {
+        entry.target.classList.remove('show');
+      }
+    });
+  });
+
+  const hiddenElements = document.querySelectorAll('.hero');
+  hiddenElements.forEach((el) => observer.observe(el));
+
+
+  
+</script>
   
 </body>
 </html>    
