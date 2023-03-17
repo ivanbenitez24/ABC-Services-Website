@@ -310,24 +310,23 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script>
-  const handleSubmit = (event) => {
+ const handleSubmit = (event) => {
   event.preventDefault();
 
   const myForm = event.target;
   const formData = new FormData(myForm);
-  
+
   fetch("/", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams(formData).toString(),
   })
-    .then(() => console.log("Form successfully submitted"))
+    .then(() => {
+      console.log("Form successfully submitted");
+      alert("Thank you for submitting the form!");
+    })
     .catch((error) => alert(error));
 };
-
-document
-  .querySelector("form")
-  .addEventListener("submit", handleSubmit);
 </script>
 
 <script>
